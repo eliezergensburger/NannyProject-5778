@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mothers>
+  <mother>
+    <ID>37</ID>
+    <FirstName>Mamme</FirstName>
+    <LastName>Sheli</LastName>
+    <WantedDaysArray>
+      <DayBool>True</DayBool>
+      <DayBool>True</DayBool>
+      <DayBool>True</DayBool>
+      <DayBool>True</DayBool>
+      <DayBool>True</DayBool>
+      <DayBool>False</DayBool>
+    </WantedDaysArray>
+    <Address>Ha-Va'ad ha-Le'umi St 21, Jerusalem</Address>
+    <Location>Mal'akhi St 16, Bnei Brak</Location>
+    <DaysArray>
+      <Day>
+          <Time type ="Start">
+            <Hour>7</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+         </Time>
+          <Time type ="End">
+            <Hour>16</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+      </Day>
+     <Day>
+          <Time type ="Start">
+            <Hour>7</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+          <Time type ="End">
+            <Hour>16</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+      </Day>
+      <Day>
+          <Time type ="Start">
+            <Hour>7</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+          <Time type ="End">
+            <Hour>16</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+      </Day>
+      <Day>
+          <Time type ="Start">
+            <Hour>7</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+          <Time type ="End">
+            <Hour>16</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+      </Day>
+      <Day>
+          <Time type ="Start">
+            <Hour>7</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+          <Time type ="End">
+            <Hour>16</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+      </Day>
+      <Day>
+          <Time type ="Start">
+            <Hour>7</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+          <Time type ="End">
+            <Hour>16</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+      </Day>
+    </DaysArray>
+    <CellPhone>052222222</CellPhone>
+  </mother>
+  <mother>
+    <ID>38</ID>
+    <FirstName>Sarah</FirstName>
+    <LastName>Imeinu</LastName>
+    <WantedDaysArray>
+      <DayBool>True</DayBool>
+      <DayBool>True</DayBool>
+      <DayBool>True</DayBool>
+      <DayBool>True</DayBool>
+      <DayBool>True</DayBool>
+      <DayBool>False</DayBool>
+    </WantedDaysArray>
+    <Address>Beit Hadefuss St 7, Jerusalem</Address>
+    <Location>Mal'akhi St 1, Bnei Brak</Location>
+    <DaysArray>
+      <Day>
+         <Time type ="Start">
+            <Hour>7</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+           </Time>
+         <Time type ="End">
+            <Hour>16</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+      </Day>
+     <Day>
+         <Time type ="Start">
+            <Hour>8</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+          <Time type ="End">
+            <Hour>16</Hour>
+            <Minutes>30</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+      </Day>
+    <Day>
+         <Time type ="Start">
+            <Hour>7</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+          <Time type ="End">
+            <Hour>16</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+      </Day>
+   <Day>
+         <Time type ="Start">
+            <Hour>7</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+           </Time>
+          <Time type ="End">
+            <Hour>16</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+      </Day>
+  <Day>
+         <Time type ="Start">
+            <Hour>7</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+           </Time>
+          <Time type ="End">
+            <Hour>16</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+      </Day>
+  <Day>
+         <Time type ="Start">
+            <Hour>7</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+           </Time>
+          <Time type ="End">
+            <Hour>16</Hour>
+            <Minutes>0</Minutes>
+            <Seconds>0</Seconds>
+          </Time>
+      </Day>
+    </DaysArray>
+    <CellPhone>05111111</CellPhone>
+  </mother>
+</mothers>

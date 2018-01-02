@@ -1,0 +1,9 @@
+C:\Users\eliezer\Desktop\Nannyproject-5778-master (1)\Nannyproject-5778-master\BE\bin\Debug\BE.dll
+C:\Users\eliezer\Desktop\Nannyproject-5778-master (1)\Nannyproject-5778-master\BE\bin\Debug\BE.pdb
+C:\Users\eliezer\Desktop\Nannyproject-5778-master (1)\Nannyproject-5778-master\BE\obj\Debug\BE.dll
+C:\Users\eliezer\Desktop\Nannyproject-5778-master (1)\Nannyproject-5778-master\BE\obj\Debug\BE.pdb
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\BE\bin\Debug\BE.dll
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\BE\bin\Debug\BE.pdb
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\BE\obj\Debug\BE.dll
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\BE\obj\Debug\BE.pdb
