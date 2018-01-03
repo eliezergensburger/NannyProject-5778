@@ -17,3 +17,13 @@ C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\DAL
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\DAL\obj\Debug\DAL.dll
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\DAL\obj\Debug\DAL.pdb
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DAL\bin\Debug\DAL.dll
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DAL\bin\Debug\DAL.pdb
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DAL\bin\Debug\BE.dll
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DAL\bin\Debug\DS.dll
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DAL\bin\Debug\BE.pdb
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DAL\bin\Debug\DS.pdb
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DAL\obj\Debug\DAL.dll
+C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DAL\obj\Debug\DAL.pdb

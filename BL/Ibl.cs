@@ -9,7 +9,7 @@ namespace BL
         int addMother(Mother m);
         bool removeMother(Mother m);
         List<Mother> getAllMothers(Func<Mother,bool> filter = null);
-        int getWalkingDistance(string source, string target);
-        int getDrivingDistance(string source, string target);
+        int getWalkingDistance(string source, string target,bool withdirections = true);
+        int getDrivingDistance(string source, string target, bool withdirections = true);
     }
 }

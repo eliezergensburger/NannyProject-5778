@@ -1,9 +1,10 @@
 ﻿using System;
-using BE;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Xml.Linq;
 using System.Collections.Generic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
+using System.Xml.Linq;
+using BE;
+using BL;
 using DAL;
 
 namespace UnitTestProject1
@@ -46,7 +47,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMotherToXml()
         {
-             XElement motherXml = imma.toXML();
+            XElement motherXml = imma.toXML();
             var x = (from e in motherXml.Element("WantedDaysArray").Elements("DayBool")
                      select Boolean.Parse(e.Value));
             foreach (var b in x)
@@ -84,18 +85,18 @@ namespace UnitTestProject1
             XElement root = DS.DatasourceXML.Mothers;
             var firstmother = root.Elements("mother").First();
             var res = (from d in firstmother.Element("DaysArray").Elements("Day")
-                from t in d.Elements("Time")
-                select new Day
-                {
-                    Start = new Time(
-                        Int32.Parse(t.Element("Hour").Value),
-                        Int32.Parse(t.Element("Minutes").Value),
-                        Int32.Parse(t.Element("Seconds").Value)),
-                    End = new Time(
-                        Int32.Parse(t.Element("Hour").Value),
-                        Int32.Parse(t.Element("Minutes").Value),
-                        Int32.Parse(t.Element("Seconds").Value)),
-                }).ToList();
+                       from t in d.Elements("Time")
+                       select new Day
+                       {
+                           Start = new Time(
+                               Int32.Parse(t.Element("Hour").Value),
+                               Int32.Parse(t.Element("Minutes").Value),
+                               Int32.Parse(t.Element("Seconds").Value)),
+                           End = new Time(
+                               Int32.Parse(t.Element("Hour").Value),
+                               Int32.Parse(t.Element("Minutes").Value),
+                               Int32.Parse(t.Element("Seconds").Value)),
+                       }).ToList();
             foreach (var d in res)
             {
                 Console.WriteLine(d);
@@ -106,10 +107,18 @@ namespace UnitTestProject1
         public void TestGoogleMapApi()
         {
             BL.Ibl bl = BL.FactorySingletonBL.getInstance;
-            int distance = bl.getDrivingDistance("Ha-Va'ad ha-Le'umi St 21, Jerusalem", "Beit Ha-Defus St 7, Jerusalem");
-            Console.WriteLine(distance);
-            //Assert.IsTrue(distance>0);
-        }
 
+            int distance = bl.getDrivingDistance("Ha-Va'ad ha-Le'umi St 21, Jerusalem", "Beit Ha-Defus St 7, Jerusalem", false);
+            //int distance = bl.getDrivingDistance("Beit Ha-Defus St 47, Jerusalem", "Beit Ha-Defus St 7, Jerusalem", false);
+
+            if (distance >= 1000)
+            {
+                Console.WriteLine("distance is {0:#,000} kilometers", distance);
+            }
+            else
+            {
+                Console.WriteLine("distance is {0} meters", distance);
+            }
+         }
     }
 }

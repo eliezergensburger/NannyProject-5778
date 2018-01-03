@@ -52,21 +52,23 @@ namespace BL
             return result;
         }
 
-        private static Leg PrintDirections(DirectionsResponse directions)
+        private static Leg PrintDirections(DirectionsResponse directions,bool printdetails =true)
         {
             Route route = directions.Routes.First();
             Leg leg = route.Legs.First();
             //string result = leg.Distance.Text;
-            foreach (Step step in leg.Steps)
+            if (printdetails == true)
             {
-                Console.WriteLine(StripHTML(step.HtmlInstructions));
+                foreach (Step step in leg.Steps)
+                {
+                    Console.WriteLine(StripHTML(step.HtmlInstructions));
 
-                var localIcon = step.TransitDetails?.Lines?.Vehicle?.LocalIcon;
-                if (localIcon != null)
-                    Console.WriteLine("Local sign: " + localIcon);
+                    var localIcon = step.TransitDetails?.Lines?.Vehicle?.LocalIcon;
+                    if (localIcon != null)
+                        Console.WriteLine("Local sign: " + localIcon);
+                }
+                Console.WriteLine();
             }
-
-            Console.WriteLine();
             return leg;
         }
 
@@ -75,7 +77,7 @@ namespace BL
             return Regex.Replace(html, @"<(.|\n)*?>", string.Empty);
         }
 
-        public int getWalkingDistance(string source, string target)
+        public int getWalkingDistance(string source, string target, bool withdirections)
         {
             var drivingDirectionRequest = new DirectionsRequest
             {
@@ -85,11 +87,11 @@ namespace BL
                // Destination = "31.8414894,35.2471631"
             };
             DirectionsResponse drivingDirections = GoogleMaps.Directions.Query(drivingDirectionRequest);
-            Leg leg = PrintDirections(drivingDirections);
+            Leg leg = PrintDirections(drivingDirections, withdirections);
 
             return (leg.Distance.Value);
         }
-        public int getDrivingDistance(string source, string target)
+        public int getDrivingDistance(string source, string target,bool withdirections)
         {
             var drivingDirectionRequest = new DirectionsRequest
             {
@@ -99,7 +101,7 @@ namespace BL
                 // Destination = "31.8414894,35.2471631"
             };
             DirectionsResponse drivingDirections = GoogleMaps.Directions.Query(drivingDirectionRequest);
-            Leg leg = PrintDirections(drivingDirections);
+            Leg leg = PrintDirections(drivingDirections, withdirections);
 
             return (leg.Distance.Value);
         }
