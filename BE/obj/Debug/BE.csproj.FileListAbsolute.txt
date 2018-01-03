@@ -12,4 +12,3 @@ C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\BE\bin
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\BE\obj\Debug\BE.dll
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\BE\obj\Debug\BE.pdb
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\BE\obj\Debug\BE.csprojResolveAssemblyReference.cache
