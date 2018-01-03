@@ -110,15 +110,14 @@ namespace UnitTestProject1
 
             int distance = bl.getDrivingDistance("Ha-Va'ad ha-Le'umi St 21, Jerusalem", "Beit Ha-Defus St 7, Jerusalem", false);
             //int distance = bl.getDrivingDistance("Beit Ha-Defus St 47, Jerusalem", "Beit Ha-Defus St 7, Jerusalem", false);
+            
 
-            if (distance >= 1000)
-            {
-                Console.WriteLine("distance is {0:#,000} kilometers", distance);
-            }
-            else
-            {
-                Console.WriteLine("distance is {0} meters", distance);
-            }
-         }
+            string result = (distance >= 1000) ? String.Format("driving distance is {0:#,000} kilometers", distance) : String.Format("driving distance is {0} meters", distance);
+            Console.WriteLine(result);
+
+            int distance2 = bl.getWalkingDistance("Ha-Va'ad ha-Le'umi St 21, Jerusalem", "Beit Ha-Defus St 7, Jerusalem", false);
+            result = (distance2 >= 1000) ? String.Format("walking distance is {0:#,000} kilometers", distance2) : String.Format("walking distance is {0} meters", distance2);
+            Console.WriteLine(result);
+        }
     }
 }
