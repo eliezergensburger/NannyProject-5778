@@ -11,12 +11,18 @@ namespace DS
     {
         #region private members
         private static List<Mother> motherlist = new List<Mother>();
+        private static List<ContractNannyChild> contractNannyChildlist = new List<ContractNannyChild>();
         #endregion
 
         #region getters and setters
         public static List<Mother> Mothers
         {
             get { return motherlist; }
+        }
+
+        public static List<ContractNannyChild> ContractNannyChildlist
+        {
+            get => contractNannyChildlist;
         }
         #endregion
     }

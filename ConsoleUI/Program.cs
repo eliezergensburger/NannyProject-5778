@@ -13,6 +13,16 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             int option = -1;
+            int ID = 38;
+            string FirstName;
+            string LastName;
+            string Address;
+            string Location;
+            string CellPhone;
+            bool[] WantedDays;
+            List<Day> Days;
+           
+
             string choice;
             do
             {
@@ -24,6 +34,13 @@ namespace ConsoleUI
                     case 0:
                         break;
                     case 1:
+                        ID = Int32.Parse(Console.ReadLine());
+                        FirstName = Console.ReadLine();
+                        LastName = Console.ReadLine();
+                        Address = Console.ReadLine();
+                        Location = Console.ReadLine();
+                        CellPhone = Console.ReadLine();
+
                         addMother();
                         break;
                     case 2:
