@@ -18,6 +18,11 @@ namespace BE
         public double MonthlyPayment { get; set; }
         public bool IsPaidByHour { get; set; }
         public DateTime StartContact { get; set; }
-        public DateTime EndContract { get; set; }
+        public DateTime? EndContract { get; set; }
+
+        public override string ToString()
+        {
+            return this.ToStringProperty();
+        }
     }
 }

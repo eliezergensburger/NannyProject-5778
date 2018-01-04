@@ -17,13 +17,48 @@ namespace DAL
             return m.ID;           
         }
 
+        private  int MaxContractID()
+        {
+            var result = (from c in DS.DatasourceXML.Contracts.Elements("Contract")
+                          select Int32.Parse(c.Element("ContractID").Value)).Max();
+            if (result == 0)
+            {
+                result = 100000;
+            }
+            return result;
+
+        }
+        public int addContract(ContractNannyChild c)
+        {
+            //ContractNannyChild contract = c.clone();
+            //contract.ContractId = MaxContractID() + 1;
+            //DS.DatasourceXML.Contracts.Add(contract.toXML());
+
+            XElement contract = c.toXML();
+            contract.Element("ContractID").Value = (MaxContractID() + 1).ToString();
+            DS.DatasourceXML.Contracts.Add(contract);
+            DS.DatasourceXML.SaveContracts();
+            return c.ContractId;
+
+        }
         public IEnumerable<Mother> getAllMothers()
         {
             XElement root = DS.DatasourceXML.Mothers;
             List<Mother> result = new List<Mother>();
-            foreach (var m in root.Elements("mother"))
+            foreach (var m in root.Elements("Mother"))
             {
                result.Add(m.toMother());
+            }
+            return result.AsEnumerable();
+        }
+
+        public IEnumerable<ContractNannyChild> getAllContracts()
+        {
+            XElement root = DS.DatasourceXML.Contracts;
+            List<ContractNannyChild> result = new List<ContractNannyChild>();
+            foreach (var c in root.Elements("Contract"))
+            {
+                result.Add(c.toContract());
             }
             return result.AsEnumerable();
         }

@@ -70,3 +70,27 @@ C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\WpfUI\
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\WpfUI\obj\Debug\WpfUI.csproj.CoreCompileInputs.cache
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\WpfUI\obj\Debug\WpfUI.exe
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\WpfUI\obj\Debug\WpfUI.pdb
+C:\Users\student\Desktop\Nanny\WpfUI\bin\Debug\WpfUI.exe.config
+C:\Users\student\Desktop\Nanny\WpfUI\bin\Debug\WpfUI.exe
+C:\Users\student\Desktop\Nanny\WpfUI\bin\Debug\WpfUI.pdb
+C:\Users\student\Desktop\Nanny\WpfUI\bin\Debug\BE.dll
+C:\Users\student\Desktop\Nanny\WpfUI\bin\Debug\BL.dll
+C:\Users\student\Desktop\Nanny\WpfUI\bin\Debug\DAL.dll
+C:\Users\student\Desktop\Nanny\WpfUI\bin\Debug\GoogleMapsApi.dll
+C:\Users\student\Desktop\Nanny\WpfUI\bin\Debug\DS.dll
+C:\Users\student\Desktop\Nanny\WpfUI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\student\Desktop\Nanny\WpfUI\bin\Debug\BE.pdb
+C:\Users\student\Desktop\Nanny\WpfUI\bin\Debug\BL.pdb
+C:\Users\student\Desktop\Nanny\WpfUI\bin\Debug\DAL.pdb
+C:\Users\student\Desktop\Nanny\WpfUI\bin\Debug\DS.pdb
+C:\Users\student\Desktop\Nanny\WpfUI\obj\Debug\WpfUI.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Nanny\WpfUI\obj\Debug\MainWindow.g.cs
+C:\Users\student\Desktop\Nanny\WpfUI\obj\Debug\App.g.cs
+C:\Users\student\Desktop\Nanny\WpfUI\obj\Debug\WpfUI_MarkupCompile.cache
+C:\Users\student\Desktop\Nanny\WpfUI\obj\Debug\WpfUI_MarkupCompile.lref
+C:\Users\student\Desktop\Nanny\WpfUI\obj\Debug\MainWindow.baml
+C:\Users\student\Desktop\Nanny\WpfUI\obj\Debug\WpfUI.g.resources
+C:\Users\student\Desktop\Nanny\WpfUI\obj\Debug\WpfUI.Properties.Resources.resources
+C:\Users\student\Desktop\Nanny\WpfUI\obj\Debug\WpfUI.csproj.GenerateResource.Cache
+C:\Users\student\Desktop\Nanny\WpfUI\obj\Debug\WpfUI.exe
+C:\Users\student\Desktop\Nanny\WpfUI\obj\Debug\WpfUI.pdb

@@ -71,7 +71,7 @@ namespace UnitTestProject1
         public void TestToMother()
         {
             XElement root = DS.DatasourceXML.Mothers;
-            XElement firstmother = root.Elements("mother").First();
+            XElement firstmother = root.Elements("Mother").First();
             var mmm = firstmother.Element("DaysArray");
             Console.WriteLine(mmm);
             Mother mother = firstmother.toMother();
@@ -83,7 +83,7 @@ namespace UnitTestProject1
         public void TestMotherDayXml()
         {
             XElement root = DS.DatasourceXML.Mothers;
-            var firstmother = root.Elements("mother").First();
+            var firstmother = root.Elements("Mother").First();
             var res = (from d in firstmother.Element("DaysArray").Elements("Day")
                        from t in d.Elements("Time")
                        select new Day

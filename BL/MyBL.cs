@@ -28,6 +28,12 @@ namespace BL
             return dal.addMother(m);
         }
 
+        public int addContract(ContractNannyChild c)
+        {
+            IDal dal = DAL.FactorysingletonDal.getInstance;
+            return dal.addContract(c);
+
+        }
         public bool removeMother(Mother m)
         {
             IDal dal = DAL.FactorysingletonDal.getInstance;
@@ -46,6 +52,24 @@ namespace BL
             {
                 //  result = dal.getAllMothers().Where(filter).ToList();
                 result = (from m in dal.getAllMothers()
+                          where filter(m)
+                          select m).ToList();
+            }
+            return result;
+        }
+
+        public List<ContractNannyChild> getAllContracts(Func<ContractNannyChild, bool> filter = null)
+        {
+            List<ContractNannyChild> result;
+            IDal dal = DAL.FactorysingletonDal.getInstance;
+            if (filter == null)
+            {
+                result = dal.getAllContracts().ToList();
+            }
+            else
+            {
+                //  result = dal.getAllContracts().Where(filter).ToList();
+                result = (from m in dal.getAllContracts()
                           where filter(m)
                           select m).ToList();
             }
@@ -105,5 +129,6 @@ namespace BL
 
             return (leg.Distance.Value);
         }
+
     }
 }

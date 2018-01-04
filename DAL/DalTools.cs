@@ -24,9 +24,26 @@ namespace DAL
                 CellPhone = mother.CellPhone
             };
         }
-        public static XElement toXML(this Time time,string attribute ="undefined")
+        public static ContractNannyChild clone(this ContractNannyChild contract)
         {
-            return new XElement("Time", new XAttribute("type",attribute),
+            return new ContractNannyChild
+            {
+                ContractId = contract.ContractId,
+                ChildId = contract.ChildId,
+                NannyId = contract.NannyId,
+                MotherId = contract.MotherId,
+                HadInterview = contract.HadInterview,
+                SignedContract = contract.SignedContract,
+                HourlyPayment = contract.HourlyPayment,
+                MonthlyPayment = contract.MonthlyPayment,
+                IsPaidByHour = contract.IsPaidByHour,
+                StartContact = contract.StartContact,
+                EndContract = contract.EndContract
+            };
+        }
+        public static XElement toXML(this Time time, string attribute = "undefined")
+        {
+            return new XElement("Time", new XAttribute("type", attribute),
                 new XElement("Hour", time.Hour),
                 new XElement("Minutes", time.Minutes),
                 new XElement("Seconds", time.Seconds));
@@ -34,8 +51,8 @@ namespace DAL
 
         public static XElement toXML(this Mother mother)
         {
-            return new XElement("mother",
-                new XElement("ID", mother.ID.ToString()),
+            return new XElement("Mother",
+                new XElement("ID", mother.ID),
                 new XElement("FirstName", mother.FirstName),
                 new XElement("LastName", mother.LastName),
                 new XElement("WantedDaysArray",
@@ -55,10 +72,31 @@ namespace DAL
                 new XElement("CellPhone", mother.CellPhone)
             );
         }
-
+        public static XElement toXML(this ContractNannyChild contract)
+        {
+            return new XElement("Contract",
+                new XElement("ContractID", contract.ContractId),
+                new XElement("MotherId", contract.MotherId),
+                new XElement("NannyId", contract.NannyId)
+            );
+        }
+        public static ContractNannyChild toContract(this XElement contractrXml)
+        {
+            ContractNannyChild result = null;
+            if (contractrXml == null)
+            {
+                return result;
+            }
+            else
+            {
+                //TO DO
+            }
+            return result;
+        }
+  
         public static Mother toMother(this XElement motherXml)
         {
-           Mother result = null;
+            Mother result = null;
             if (motherXml == null)
             {
                 return result;

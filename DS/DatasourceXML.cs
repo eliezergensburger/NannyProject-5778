@@ -18,49 +18,70 @@ namespace DS
         private static XElement motherRoot = null;
         static string motherPath = Path.Combine(filePath, "MotherXml.xml");
 
+        private static XElement contractRoot = null;
+        static string contractPath = Path.Combine(filePath, "ContractXml.xml");
+
         static DatasourceXML()
         {
             if (!File.Exists(motherPath))
-                CreateFiles();
+                CreateFile(motherRoot,"Mothers",motherPath);
             else
-                LoadData();
+                LoadData(motherRoot, motherPath);
+
+            if (!File.Exists(contractPath))
+                CreateFile(contractRoot, "Contracts",contractPath);
+            else
+                LoadData(contractRoot,contractPath);
         }
 
         public static void Save(XElement root, string path)
         {
             root.Save(path);
-            LoadData();
+            LoadData(root,path);
         }
 
         public static void SaveMothers()
         {
             motherRoot.Save(motherPath);
-            LoadData();
+            LoadData(motherRoot, motherPath);
+        }
+        public static void SaveContracts()
+        {
+            contractRoot.Save(motherPath);
+            LoadData(motherRoot, motherPath);
         }
 
         public static XElement Mothers
         {
             get
             {
-                LoadData();
+                LoadData(motherRoot, motherPath);
                 return motherRoot;
             }
         }
-
-        private static void CreateFiles()
+        public static XElement Contracts
         {
-            if (motherRoot == null)
+            get
             {
-                motherRoot = new XElement("mothers");
+                LoadData(contractRoot, contractPath);
+                return contractRoot;
             }
-            motherRoot.Save(motherPath);
         }
 
-        private static void LoadData()
+         private static void CreateFile(XElement root,string typename,string path)
+        {
+            if (root == null)
+            {
+                root = new XElement(typename);
+            }
+            root.Save(path);
+        }
+
+        private static void LoadData(XElement root,string path)
         {
             try
             {
-                motherRoot = XElement.Load(motherPath);
+                root = XElement.Load(path);
             }
             catch
             {
