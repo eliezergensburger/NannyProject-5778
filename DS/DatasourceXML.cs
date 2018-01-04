@@ -19,17 +19,17 @@ namespace DS
         static string motherPath = Path.Combine(filePath, "MotherXml.xml");
 
         private static XElement contractRoot = null;
-        static string contractPath = Path.Combine(filePath, "ContracXml.xml");
+        static string contractPath = Path.Combine(filePath, "ContractXml.xml");
 
         static DatasourceXML()
         {
             if (!File.Exists(motherPath))
-                CreateFile(motherRoot,"mothers",motherPath);
+                CreateFile(motherRoot,"Mothers",motherPath);
             else
                 LoadData(motherRoot, motherPath);
 
             if (!File.Exists(contractPath))
-                CreateFile(contractRoot, "contracts",contractPath);
+                CreateFile(contractRoot, "Contracts",contractPath);
             else
                 LoadData(contractRoot,contractPath);
         }
