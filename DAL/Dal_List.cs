@@ -37,17 +37,17 @@ namespace DAL
             return mothers.AsEnumerable();
         }
 
-        public int addContract(ContractNannyChild c)
+        public int addContract(Contract c)
         {
-            ContractNannyChild contract = c.clone();
+            Contract contract = c.clone();
             contract.ContractId = ++ContractSerial;
             DS.DataSource.ContractNannyChildlist.Add(contract);
             return contract.ContractId;
         }
 
-        public IEnumerable<ContractNannyChild> getAllContracts()
+        public IEnumerable<Contract> getAllContracts()
         {
-            List<ContractNannyChild> contracts = new List<ContractNannyChild>();
+            List<Contract> contracts = new List<Contract>();
             foreach (var c in DS.DataSource.ContractNannyChildlist)
             {
                 contracts.Add(c.clone());

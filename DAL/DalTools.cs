@@ -24,9 +24,9 @@ namespace DAL
                 CellPhone = mother.CellPhone
             };
         }
-        public static ContractNannyChild clone(this ContractNannyChild contract)
+        public static Contract clone(this Contract contract)
         {
-            return new ContractNannyChild
+            return new Contract
             {
                 ContractId = contract.ContractId,
                 ChildId = contract.ChildId,
@@ -72,7 +72,7 @@ namespace DAL
                 new XElement("CellPhone", mother.CellPhone)
             );
         }
-        public static XElement toXML(this ContractNannyChild contract)
+        public static XElement toXML(this Contract contract)
         {
             return new XElement("Contract",
                 new XElement("ContractID", contract.ContractId),
@@ -80,9 +80,9 @@ namespace DAL
                 new XElement("NannyId", contract.NannyId)
             );
         }
-        public static ContractNannyChild toContract(this XElement contractrXml)
+        public static Contract toContract(this XElement contractrXml)
         {
-            ContractNannyChild result = null;
+            Contract result = null;
             if (contractrXml == null)
             {
                 return result;

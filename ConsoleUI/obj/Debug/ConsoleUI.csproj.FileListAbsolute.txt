@@ -29,6 +29,22 @@ C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\Con
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\ConsoleUI\obj\Debug\ConsoleUI.pdb
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\ConsoleUI\bin\Debug\GoogleMapsApi.dll
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\ConsoleUI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\BE.dll
+C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\BL.dll
+C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\DAL.dll
+C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\GoogleMapsApi.dll
+C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\DS.dll
+C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\BE.pdb
+C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\BL.pdb
+C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\DAL.pdb
+C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\DS.pdb
+C:\Users\student\Desktop\Nanny\ConsoleUI\obj\Debug\ConsoleUI.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Nanny\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\student\Desktop\Nanny\ConsoleUI\obj\Debug\ConsoleUI.pdb
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\ConsoleUI.exe.config
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\ConsoleUI.exe
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\ConsoleUI.pdb
@@ -46,19 +62,3 @@ C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\Consol
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\obj\Debug\ConsoleUI.exe
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\obj\Debug\ConsoleUI.pdb
-C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\ConsoleUI.exe.config
-C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\ConsoleUI.exe
-C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\ConsoleUI.pdb
-C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\BE.dll
-C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\BL.dll
-C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\DAL.dll
-C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\GoogleMapsApi.dll
-C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\DS.dll
-C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\Newtonsoft.Json.dll
-C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\BE.pdb
-C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\BL.pdb
-C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\DAL.pdb
-C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\DS.pdb
-C:\Users\student\Desktop\Nanny\ConsoleUI\obj\Debug\ConsoleUI.csprojResolveAssemblyReference.cache
-C:\Users\student\Desktop\Nanny\ConsoleUI\obj\Debug\ConsoleUI.exe
-C:\Users\student\Desktop\Nanny\ConsoleUI\obj\Debug\ConsoleUI.pdb

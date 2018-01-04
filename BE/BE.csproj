@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Child.cs" />
-    <Compile Include="ContractNannyChild.cs" />
+    <Compile Include="Contract.cs" />
     <Compile Include="Day.cs" />
     <Compile Include="Mother.cs" />
     <Compile Include="Nanny.cs" />

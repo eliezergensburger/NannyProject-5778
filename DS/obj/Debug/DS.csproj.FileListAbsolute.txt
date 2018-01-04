@@ -13,6 +13,13 @@ C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\DS\
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\DS\obj\Debug\DS.csproj.CoreCompileInputs.cache
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\DS\obj\Debug\DS.dll
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-06122017\Nannyproject-5778-master\DS\obj\Debug\DS.pdb
+C:\Users\student\Desktop\Nanny\DS\bin\Debug\DS.dll
+C:\Users\student\Desktop\Nanny\DS\bin\Debug\DS.pdb
+C:\Users\student\Desktop\Nanny\DS\bin\Debug\BE.dll
+C:\Users\student\Desktop\Nanny\DS\bin\Debug\BE.pdb
+C:\Users\student\Desktop\Nanny\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\Users\student\Desktop\Nanny\DS\obj\Debug\DS.dll
+C:\Users\student\Desktop\Nanny\DS\obj\Debug\DS.pdb
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DS\bin\Debug\DS.dll
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DS\bin\Debug\DS.pdb
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DS\bin\Debug\BE.dll
@@ -21,10 +28,3 @@ C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DS\obj
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DS\obj\Debug\DS.csproj.CoreCompileInputs.cache
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DS\obj\Debug\DS.dll
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DS\obj\Debug\DS.pdb
-C:\Users\student\Desktop\Nanny\DS\bin\Debug\DS.dll
-C:\Users\student\Desktop\Nanny\DS\bin\Debug\DS.pdb
-C:\Users\student\Desktop\Nanny\DS\bin\Debug\BE.dll
-C:\Users\student\Desktop\Nanny\DS\bin\Debug\BE.pdb
-C:\Users\student\Desktop\Nanny\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
-C:\Users\student\Desktop\Nanny\DS\obj\Debug\DS.dll
-C:\Users\student\Desktop\Nanny\DS\obj\Debug\DS.pdb

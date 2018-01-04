@@ -28,7 +28,7 @@ namespace DAL
             return result;
 
         }
-        public int addContract(ContractNannyChild c)
+        public int addContract(Contract c)
         {
             //ContractNannyChild contract = c.clone();
             //contract.ContractId = MaxContractID() + 1;
@@ -52,10 +52,10 @@ namespace DAL
             return result.AsEnumerable();
         }
 
-        public IEnumerable<ContractNannyChild> getAllContracts()
+        public IEnumerable<Contract> getAllContracts()
         {
             XElement root = DS.DatasourceXML.Contracts;
-            List<ContractNannyChild> result = new List<ContractNannyChild>();
+            List<Contract> result = new List<Contract>();
             foreach (var c in root.Elements("Contract"))
             {
                 result.Add(c.toContract());

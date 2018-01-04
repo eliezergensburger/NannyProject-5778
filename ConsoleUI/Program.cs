@@ -59,7 +59,7 @@ namespace ConsoleUI
                         getAllMothers();
                         break;
                     case 3:
-                        ContractNannyChild contract = new ContractNannyChild
+                        Contract contract = new Contract
                         {
                             MotherId = 123,
                             ContractId = 999,
@@ -74,7 +74,7 @@ namespace ConsoleUI
             while (option != 0);
         }
 
-        private static void addContract(ContractNannyChild contract)
+        private static void addContract(Contract contract)
         {
             try
             {

@@ -8,7 +8,7 @@ namespace DAL
         int addMother(Mother m);
         bool removeMother(Mother m);
         IEnumerable<Mother> getAllMothers();
-        int addContract(ContractNannyChild c);
-        IEnumerable<ContractNannyChild> getAllContracts();
+        int addContract(Contract c);
+        IEnumerable<Contract> getAllContracts();
     }
 }

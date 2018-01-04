@@ -11,7 +11,7 @@ namespace DS
     {
         #region private members
         private static List<Mother> motherlist = new List<Mother>();
-        private static List<ContractNannyChild> contractNannyChildlist = new List<ContractNannyChild>();
+        private static List<Contract> contractNannyChildlist = new List<Contract>();
         #endregion
 
         #region getters and setters
@@ -20,7 +20,7 @@ namespace DS
             get { return motherlist; }
         }
 
-        public static List<ContractNannyChild> ContractNannyChildlist
+        public static List<Contract> ContractNannyChildlist
         {
             get => contractNannyChildlist;
         }

@@ -28,7 +28,7 @@ namespace BL
             return dal.addMother(m);
         }
 
-        public int addContract(ContractNannyChild c)
+        public int addContract(Contract c)
         {
             IDal dal = DAL.FactorysingletonDal.getInstance;
             return dal.addContract(c);
@@ -58,9 +58,9 @@ namespace BL
             return result;
         }
 
-        public List<ContractNannyChild> getAllContracts(Func<ContractNannyChild, bool> filter = null)
+        public List<Contract> getAllContracts(Func<Contract, bool> filter = null)
         {
-            List<ContractNannyChild> result;
+            List<Contract> result;
             IDal dal = DAL.FactorysingletonDal.getInstance;
             if (filter == null)
             {
