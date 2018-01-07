@@ -19,12 +19,19 @@ namespace DAL
 
         private  int MaxContractID()
         {
-            var result = (from c in DS.DatasourceXML.Contracts.Elements("Contract")
-                          select Int32.Parse(c.Element("ContractID").Value)).Max();
-            if (result == 0)
+            int result;
+            var kayam = DS.DatasourceXML.Contracts.Elements("Contract").Any();
+
+            if (!kayam)
             {
                 result = 100000;
             }
+            else
+            {
+                result = (from c in DS.DatasourceXML.Contracts.Elements("Contract")
+                              select Int32.Parse(c.Element("ContractID").Value)).Max();
+            }
+
             return result;
 
         }
@@ -38,7 +45,7 @@ namespace DAL
             contract.Element("ContractID").Value = (MaxContractID() + 1).ToString();
             DS.DatasourceXML.Contracts.Add(contract);
             DS.DatasourceXML.SaveContracts();
-            return c.ContractId;
+            return Int32.Parse(contract.Element("ContractID").Value);
 
         }
         public IEnumerable<Mother> getAllMothers()
@@ -64,6 +71,11 @@ namespace DAL
         }
 
         public bool removeMother(Mother m)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool removeContract(Contract c)
         {
             throw new NotImplementedException();
         }

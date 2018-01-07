@@ -54,5 +54,10 @@ namespace DAL
             }
             return contracts.AsEnumerable();
         }
+
+        public bool removeContract(Contract c)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

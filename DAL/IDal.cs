@@ -10,5 +10,6 @@ namespace DAL
         IEnumerable<Mother> getAllMothers();
         int addContract(Contract c);
         IEnumerable<Contract> getAllContracts();
+        bool removeContract(Contract c);
     }
 }

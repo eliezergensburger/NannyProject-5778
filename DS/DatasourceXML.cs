@@ -13,8 +13,8 @@ namespace DS
         //private static string currentDirectory = Directory.GetCurrentDirectory();
         private static string solutionDirectory = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName;
 
-        private static string filePath = System.IO.Path.Combine(solutionDirectory,"DS", "DataXML");
-      
+        private static string filePath = System.IO.Path.Combine(solutionDirectory, "DS", "DataXML");
+
         private static XElement motherRoot = null;
         static string motherPath = Path.Combine(filePath, "MotherXml.xml");
 
@@ -23,39 +23,50 @@ namespace DS
 
         static DatasourceXML()
         {
+            bool exists = Directory.Exists(filePath);
+            if (!exists)
+            {
+                Directory.CreateDirectory(filePath);
+            }
+
             if (!File.Exists(motherPath))
-                CreateFile(motherRoot,"Mothers",motherPath);
-            else
-                LoadData(motherRoot, motherPath);
+            {
+                CreateFile("Mothers", motherPath);
+
+            }
+            motherRoot = LoadData(motherPath);
+
 
             if (!File.Exists(contractPath))
-                CreateFile(contractRoot, "Contracts",contractPath);
+            {
+                CreateFile("Contracts", contractPath);
+            }
             else
-                LoadData(contractRoot,contractPath);
+            {
+                contractRoot = LoadData(contractPath);
+            }
         }
 
         public static void Save(XElement root, string path)
         {
             root.Save(path);
-            LoadData(root,path);
         }
 
         public static void SaveMothers()
         {
             motherRoot.Save(motherPath);
-            LoadData(motherRoot, motherPath);
         }
+
         public static void SaveContracts()
         {
-            contractRoot.Save(motherPath);
-            LoadData(motherRoot, motherPath);
+            contractRoot.Save(contractPath);
         }
 
         public static XElement Mothers
         {
             get
             {
-                LoadData(motherRoot, motherPath);
+                motherRoot = LoadData(motherPath);
                 return motherRoot;
             }
         }
@@ -63,22 +74,20 @@ namespace DS
         {
             get
             {
-                LoadData(contractRoot, contractPath);
+                contractRoot = LoadData(contractPath);
                 return contractRoot;
             }
         }
 
-         private static void CreateFile(XElement root,string typename,string path)
+        private static void CreateFile(string typename, string path)
         {
-            if (root == null)
-            {
-                root = new XElement(typename);
-            }
+            XElement root = new XElement(typename);
             root.Save(path);
         }
 
-        private static void LoadData(XElement root,string path)
+        private static XElement LoadData(string path)
         {
+            XElement root;
             try
             {
                 root = XElement.Load(path);
@@ -87,6 +96,7 @@ namespace DS
             {
                 throw new Exception("File upload problem");
             }
+            return root;
         }
     }
 }

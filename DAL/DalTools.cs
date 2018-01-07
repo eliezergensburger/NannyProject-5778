@@ -77,8 +77,9 @@ namespace DAL
             return new XElement("Contract",
                 new XElement("ContractID", contract.ContractId),
                 new XElement("MotherId", contract.MotherId),
-                new XElement("NannyId", contract.NannyId)
-            );
+                new XElement("NannyId", contract.NannyId),
+                new XElement("ChildId", contract.ChildId)
+          );
         }
         public static Contract toContract(this XElement contractrXml)
         {
