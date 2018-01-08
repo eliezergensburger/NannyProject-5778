@@ -21,3 +21,11 @@ C:\Users\student\Desktop\Nanny\DS\obj\Debug\DS.csprojResolveAssemblyReference.ca
 C:\Users\student\Desktop\Nanny\DS\obj\Debug\DS.dll
 C:\Users\student\Desktop\Nanny\DS\obj\Debug\DS.pdb
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\DS\obj\Debug\DS.csproj.CoreCompileInputs.cache
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\DS\bin\Debug\DS.dll
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\DS\bin\Debug\DS.pdb
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\DS\bin\Debug\BE.dll
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\DS\bin\Debug\BE.pdb
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\DS\obj\Debug\DS.csprojResolveAssemblyReference.cache
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\DS\obj\Debug\DS.csproj.CoreCompileInputs.cache
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\DS\obj\Debug\DS.dll
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\DS\obj\Debug\DS.pdb

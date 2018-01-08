@@ -38,3 +38,17 @@ C:\Users\student\Desktop\Nanny\BL\obj\Debug\BL.dll
 C:\Users\student\Desktop\Nanny\BL\obj\Debug\BL.pdb
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BL\bin\Debug\BL.dll
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BL\bin\Debug\BL.pdb
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BL\bin\Debug\BE.dll
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BL\bin\Debug\DAL.dll
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BL\bin\Debug\GoogleMapsApi.dll
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BL\bin\Debug\Newtonsoft.Json.dll
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BL\bin\Debug\DS.dll
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BL\bin\Debug\BE.pdb
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BL\bin\Debug\DAL.pdb
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BL\bin\Debug\DS.pdb
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BL\obj\Debug\BL.dll
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BL\obj\Debug\BL.pdb
