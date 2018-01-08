@@ -10,6 +10,7 @@ namespace ConsoleUI
 {
     class Program
     {
+        private static int dummy = 1;
         static void Main(string[] args)
         {
             int option = -1;
@@ -21,7 +22,7 @@ namespace ConsoleUI
             string CellPhone;
             bool[] WantedDays;
             List<Day> Days;
-           
+
 
             string choice;
             do
@@ -64,9 +65,22 @@ namespace ConsoleUI
                             MotherId = 123,
                             ContractId = 999,
                             NannyId = 777,
-                            ChildId = 1479
+                            ChildId = ++dummy,
+                            HadInterview = true,
+                            HourlyPayment = 45.5,
+                            IsPaidByHour = (dummy % 2 == 0) ? true : false,
+                            MonthlyPayment = 2800,
+                            SignedContract = true,
+                            StartContact = DateTime.Now.AddMonths(-6),
+                            EndContract = null
                         };
                         addContract(contract);
+                        break;
+                    case 4:
+                        foreach (var item in getAllContract())
+                        {
+                            Console.WriteLine(item);
+                        }
                         break;
                 }
                 Console.WriteLine();
@@ -86,6 +100,19 @@ namespace ConsoleUI
             }
         }
 
+        private static List<Contract> getAllContract()
+        {
+            List<Contract> result = null;
+            try
+            {
+                result = BL.FactorySingletonBL.getInstance.getAllContracts();
+            }
+            catch (Exception baya)
+            {
+                Console.WriteLine(baya.Message);
+            }
+            return result;
+        }
         private static void getAllMothers()
         {
             try
