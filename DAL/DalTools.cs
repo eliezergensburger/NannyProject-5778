@@ -7,6 +7,7 @@ using BE;
 using System.Xml.Linq;
 using System.IO;
 using System.Xml.Serialization;
+using System.Reflection;
 
 namespace DAL
 {
@@ -37,27 +38,28 @@ namespace DAL
                 WantedDays = mother.WantedDays.ToArray(),
                 Address = mother.Address,
                 Location = mother.Location,
-                Days = mother.Days,
+                Days = mother.Days.ToList(),
                 CellPhone = mother.CellPhone
             };
         }
         public static Contract clone(this Contract contract)
         {
-            return new Contract
-            {
-                ContractId = contract.ContractId,
-                ChildId = contract.ChildId,
-                NannyId = contract.NannyId,
-                MotherId = contract.MotherId,
-                HadInterview = contract.HadInterview,
-                SignedContract = contract.SignedContract,
-                HourlyPayment = contract.HourlyPayment,
-                MonthlyPayment = contract.MonthlyPayment,
-                IsPaidByHour = contract.IsPaidByHour,
-                StartContact = contract.StartContact,
-                EndContract = contract.EndContract
-            };
-        }
+            //return new Contract
+            //{
+            //    ContractId = contract.ContractId,
+            //    ChildId = contract.ChildId,
+            //    NannyId = contract.NannyId,
+            //    MotherId = contract.MotherId,
+            //    HadInterview = contract.HadInterview,
+            //    SignedContract = contract.SignedContract,
+            //    HourlyPayment = contract.HourlyPayment,
+            //    MonthlyPayment = contract.MonthlyPayment,
+            //    IsPaidByHour = contract.IsPaidByHour,
+            //    StartContact = contract.StartContact,
+            //    EndContract = contract.EndContract
+            //};
+            return DeepClone(contract);
+       }
  
         public static XElement toXML(this TimeSpan time, string attribute = "undefined")
         {
@@ -93,22 +95,24 @@ namespace DAL
         public static XElement toXML(this Contract contract)
         {
             return new XElement("Contract",
-                new XElement("ContractID", contract.ContractId),
-                new XElement("MotherId", contract.MotherId),
-                new XElement("NannyId", contract.NannyId),
-                new XElement("ChildId", contract.ChildId)
-          );
+                 from PropertyInfo item in contract.GetType().GetProperties()
+                 select new XElement(item.Name, item.GetValue(contract, null))
+                 );
         }
-        public static Contract toContract(this XElement contractrXml)
+        public static Contract toContract(this XElement contractXml)
         {
             Contract result = null;
-            if (contractrXml == null)
+            if (contractXml == null)
             {
                 return result;
             }
             else
             {
-                //TO DO
+                result = new Contract();
+                foreach (PropertyInfo item in result.GetType().GetProperties())
+                {
+                    item.SetValue(item.Name, contractXml.Element(item.Name).Value);
+                }
             }
             return result;
         }
