@@ -8,12 +8,11 @@ namespace BE
 {
     public class Day
     {
-        public Time Start { get; set; }
-        public Time End { get; set; }
+        public TimeSpan Start { get; set; }
+        public TimeSpan End { get; set; }
         public override string ToString()
         {
             return this.ToStringProperty();
         }
-
     }
 }

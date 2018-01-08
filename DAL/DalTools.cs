@@ -58,10 +58,11 @@ namespace DAL
                 EndContract = contract.EndContract
             };
         }
-        public static XElement toXML(this Time time, string attribute = "undefined")
+ 
+        public static XElement toXML(this TimeSpan time, string attribute = "undefined")
         {
             return new XElement("Time", new XAttribute("type", attribute),
-                new XElement("Hour", time.Hour),
+                new XElement("Hours", time.Hours),
                 new XElement("Minutes", time.Minutes),
                 new XElement("Seconds", time.Seconds));
         }
@@ -135,14 +136,15 @@ namespace DAL
                             from t in d.Elements("Time")
                             select new Day
                             {
-                                Start = new Time(
-                                    Int32.Parse(t.Element("Hour").Value),
+                                Start = new TimeSpan(
+                                    Int32.Parse(t.Element("Hours").Value),
                                     Int32.Parse(t.Element("Minutes").Value),
                                     Int32.Parse(t.Element("Seconds").Value)),
-                                End = new Time(
-                                    Int32.Parse(t.Element("Hour").Value),
+                                End = new TimeSpan(
+                                    Int32.Parse(t.Element("Hours").Value),
                                     Int32.Parse(t.Element("Minutes").Value),
-                                    Int32.Parse(t.Element("Seconds").Value)),
+                                    Int32.Parse(t.Element("Seconds").Value)) 
+
                             }).ToList()
                 };
                 return result;
