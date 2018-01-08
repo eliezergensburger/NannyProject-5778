@@ -45,20 +45,4 @@ C:\Users\student\Desktop\Nanny\ConsoleUI\bin\Debug\DS.pdb
 C:\Users\student\Desktop\Nanny\ConsoleUI\obj\Debug\ConsoleUI.csprojResolveAssemblyReference.cache
 C:\Users\student\Desktop\Nanny\ConsoleUI\obj\Debug\ConsoleUI.exe
 C:\Users\student\Desktop\Nanny\ConsoleUI\obj\Debug\ConsoleUI.pdb
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\ConsoleUI.exe.config
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\ConsoleUI.exe
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\ConsoleUI.pdb
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\BE.dll
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\BL.dll
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\DAL.dll
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\GoogleMapsApi.dll
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\DS.dll
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\Newtonsoft.Json.dll
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\BE.pdb
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\BL.pdb
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\DAL.pdb
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\bin\Debug\DS.pdb
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\obj\Debug\ConsoleUI.csprojResolveAssemblyReference.cache
 C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\obj\Debug\ConsoleUI.exe
-C:\AKADEMIC\5778\Dot Net\Nannyproject-5778-final\Nannyproject-5778-master\ConsoleUI\obj\Debug\ConsoleUI.pdb

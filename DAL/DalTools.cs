@@ -5,11 +5,28 @@ using System.Text;
 using System.Threading.Tasks;
 using BE;
 using System.Xml.Linq;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace DAL
 {
     public static class DalTools
     {
+        public static T DeepClone<T>(T obj)
+        {
+            using (var ms = new MemoryStream())
+            {
+                XmlSerializer xs = new XmlSerializer(typeof(T));
+                xs.Serialize(ms, obj);
+                ms.Position = 0;
+
+                return (T)xs.Deserialize(ms);
+            }
+        }
+        public static Nanny clone (this Nanny  nanny)
+        {           
+            return DeepClone(nanny);
+        }
         public static Mother clone(this Mother mother)
         {
             return new Mother
@@ -41,10 +58,11 @@ namespace DAL
                 EndContract = contract.EndContract
             };
         }
-        public static XElement toXML(this Time time, string attribute = "undefined")
+ 
+        public static XElement toXML(this TimeSpan time, string attribute = "undefined")
         {
             return new XElement("Time", new XAttribute("type", attribute),
-                new XElement("Hour", time.Hour),
+                new XElement("Hours", time.Hours),
                 new XElement("Minutes", time.Minutes),
                 new XElement("Seconds", time.Seconds));
         }
@@ -118,14 +136,15 @@ namespace DAL
                             from t in d.Elements("Time")
                             select new Day
                             {
-                                Start = new Time(
-                                    Int32.Parse(t.Element("Hour").Value),
+                                Start = new TimeSpan(
+                                    Int32.Parse(t.Element("Hours").Value),
                                     Int32.Parse(t.Element("Minutes").Value),
                                     Int32.Parse(t.Element("Seconds").Value)),
-                                End = new Time(
-                                    Int32.Parse(t.Element("Hour").Value),
+                                End = new TimeSpan(
+                                    Int32.Parse(t.Element("Hours").Value),
                                     Int32.Parse(t.Element("Minutes").Value),
-                                    Int32.Parse(t.Element("Seconds").Value)),
+                                    Int32.Parse(t.Element("Seconds").Value)) 
+
                             }).ToList()
                 };
                 return result;

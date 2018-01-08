@@ -29,14 +29,14 @@ namespace UnitTestProject1
             WantedDays = new bool[6] { true, true, true, true, true, false },
             Days = new List<Day>(6)
             {
-                new Day {Start = new Time(7), End = new Time(16)},
-                new Day {Start = new Time(8), End = new Time(16)},
-                new Day {Start = new Time(7, 30), End = new Time(13)},
-                new Day {Start = new Time(8), End = new Time(16)},
-                new Day {Start = new Time(8), End = new Time(17)},
-                new Day {Start = new Time(), End = new Time(0)},
-            }
-        };
+                new Day {Start = new TimeSpan(7,0,0), End = new TimeSpan(16,0,0)},
+                new Day {Start = new TimeSpan(8,0,0), End = new TimeSpan(16,0,0)},
+                new Day {Start = new TimeSpan(7, 30,0), End = new TimeSpan(13,0,0)},
+                new Day {Start = new TimeSpan(8,0,0), End = new TimeSpan(16,0,0)},
+                new Day {Start = new TimeSpan(8,0,0), End = new TimeSpan(17,0,0)},
+                new Day {Start = new TimeSpan(), End = new TimeSpan()}
+             }
+         };
 
         [TestMethod]
         public void TestPersonTostring()
@@ -88,11 +88,11 @@ namespace UnitTestProject1
                        from t in d.Elements("Time")
                        select new Day
                        {
-                           Start = new Time(
+                           Start = new TimeSpan(
                                Int32.Parse(t.Element("Hour").Value),
                                Int32.Parse(t.Element("Minutes").Value),
                                Int32.Parse(t.Element("Seconds").Value)),
-                           End = new Time(
+                           End = new TimeSpan(
                                Int32.Parse(t.Element("Hour").Value),
                                Int32.Parse(t.Element("Minutes").Value),
                                Int32.Parse(t.Element("Seconds").Value)),
