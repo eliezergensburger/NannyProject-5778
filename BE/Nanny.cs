@@ -20,7 +20,7 @@ namespace BE
         public double HourlyWage { get; set; }
         public double MonthlyWage { get; set; }
         public bool[] WorkDays { get; set; }
-        public List<Day> DaySchedule { get; set; }
+        public List<Yom> DaySchedule { get; set; }
         public bool VacationType { get; set; }
         public string Recommendations { get; set; } 
 

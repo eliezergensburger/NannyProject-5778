@@ -13,7 +13,7 @@ namespace BE
         public string Address { get; set; }
         public string Location { get; set; }
         public bool[] WantedDays { get; set; }
-        public List<Day> Days { get; set; }
+        public List<Yom> Days { get; set; }
         public override string ToString()
         {
             string result = base.ToString();
