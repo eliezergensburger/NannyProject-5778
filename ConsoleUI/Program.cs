@@ -63,7 +63,7 @@ namespace ConsoleUI
                         Contract contract = new Contract
                         {
                             MotherId = 123,
-                            ContractId = 999,
+                            ContractID = 999,
                             NannyId = 777,
                             ChildId = ++dummy,
                             HadInterview = true,
@@ -77,7 +77,7 @@ namespace ConsoleUI
                         addContract(contract);
                         break;
                     case 4:
-                        foreach (var item in getAllContract())
+                        foreach (var item in getAllContracts())
                         {
                             Console.WriteLine(item);
                         }
@@ -100,7 +100,7 @@ namespace ConsoleUI
             }
         }
 
-        private static List<Contract> getAllContract()
+        private static List<Contract> getAllContracts()
         {
             List<Contract> result = null;
             try

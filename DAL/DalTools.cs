@@ -8,6 +8,7 @@ using System.Xml.Linq;
 using System.IO;
 using System.Xml.Serialization;
 using System.Reflection;
+using System.ComponentModel;
 
 namespace DAL
 {
@@ -46,7 +47,7 @@ namespace DAL
         {
             //return new Contract
             //{
-            //    ContractId = contract.ContractId,
+            //    ContractID = contract.ContractID,
             //    ChildId = contract.ChildId,
             //    NannyId = contract.NannyId,
             //    MotherId = contract.MotherId,
@@ -108,10 +109,15 @@ namespace DAL
             }
             else
             {
+                //thanks to Oshri
                 result = new Contract();
-                foreach (PropertyInfo item in result.GetType().GetProperties())
+                foreach (PropertyInfo item in typeof(Contract).GetProperties())
                 {
-                    item.SetValue(item.Name, contractXml.Element(item.Name).Value);
+                    TypeConverter typeConverter = TypeDescriptor.GetConverter(item.PropertyType);
+                    object convertValue = typeConverter.ConvertFromString(contractXml.Element(item.Name).Value);
+
+                    if (item.CanWrite)
+                        item.SetValue(result, convertValue);
                 }
             }
             return result;

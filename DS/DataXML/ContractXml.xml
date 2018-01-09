@@ -1,2 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Contracts />
+<Contracts>
+  <Contract>
+    <ContractID>100001</ContractID>
+    <NannyId>777</NannyId>
+    <MotherId>123</MotherId>
+    <ChildId>2</ChildId>
+    <HadInterview>true</HadInterview>
+    <SignedContract>true</SignedContract>
+    <HourlyPayment>45.5</HourlyPayment>
+    <MonthlyPayment>2800</MonthlyPayment>
+    <IsPaidByHour>true</IsPaidByHour>
+    <StartContact>2017-07-09T16:58:55.4762343+03:00</StartContact>
+    <EndContract />
+  </Contract>
+  <Contract>
+    <ContractID>100002</ContractID>
+    <NannyId>777</NannyId>
+    <MotherId>123</MotherId>
+    <ChildId>2</ChildId>
+    <HadInterview>true</HadInterview>
+    <SignedContract>true</SignedContract>
+    <HourlyPayment>45.5</HourlyPayment>
+    <MonthlyPayment>2800</MonthlyPayment>
+    <IsPaidByHour>true</IsPaidByHour>
+    <StartContact>2017-07-09T17:16:01.8772965+03:00</StartContact>
+    <EndContract />
+  </Contract>
+  <Contract>
+    <ContractID>100003</ContractID>
+    <NannyId>777</NannyId>
+    <MotherId>123</MotherId>
+    <ChildId>2</ChildId>
+    <HadInterview>true</HadInterview>
+    <SignedContract>true</SignedContract>
+    <HourlyPayment>45.5</HourlyPayment>
+    <MonthlyPayment>2800</MonthlyPayment>
+    <IsPaidByHour>true</IsPaidByHour>
+    <StartContact>2017-07-09T18:00:55.2474671+03:00</StartContact>
+    <EndContract />
+  </Contract>
+</Contracts>

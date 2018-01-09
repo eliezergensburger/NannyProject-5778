@@ -40,9 +40,9 @@ namespace DAL
         public int addContract(Contract c)
         {
             Contract contract = c.clone();
-            contract.ContractId = ++ContractSerial;
+            contract.ContractID = ++ContractSerial;
             DS.DataSource.ContractNannyChildlist.Add(contract);
-            return contract.ContractId;
+            return contract.ContractID;
         }
 
         public IEnumerable<Contract> getAllContracts()

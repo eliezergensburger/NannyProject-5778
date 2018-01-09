@@ -38,7 +38,7 @@ namespace DAL
         public int addContract(Contract c)
         {
             //ContractNannyChild contract = c.clone();
-            //contract.ContractId = MaxContractID() + 1;
+            //contract.ContractID = MaxContractID() + 1;
             //DS.DatasourceXML.Contracts.Add(contract.toXML());
 
             XElement contract = c.toXML();

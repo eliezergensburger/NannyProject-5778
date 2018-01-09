@@ -8,7 +8,7 @@ namespace BE
 {
     public class Contract
     {
-        public int ContractId { get; set; }
+        public int ContractID { get; set; }
         public int NannyId { get; set; }
         public int MotherId { get; set; }
         public int ChildId { get; set; }
