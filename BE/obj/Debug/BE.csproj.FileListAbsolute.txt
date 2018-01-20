@@ -5,4 +5,3 @@ C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BE\bin\Debug\BE.pdb
 C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BE\obj\Debug\BE.dll
 C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BE\obj\Debug\BE.pdb
-C:\AKADEMIC\5778\Dot Net\NannyProject-5778\BE\obj\Debug\BE.csprojResolveAssemblyReference.cache

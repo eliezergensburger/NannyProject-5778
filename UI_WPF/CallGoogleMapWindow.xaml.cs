@@ -32,11 +32,13 @@ namespace UI_WPF
             BackgroundWorker gamad = new BackgroundWorker();
             gamad.DoWork += Gamad_DoWork;
             gamad.RunWorkerCompleted += Gamad_RunWorkerCompleted;
+            //gamad.RunWorkerCompleted += (s, re) => { MessageBox.Show(String.Format("result is: {0}", re.Result.ToString())); };
             gamad.RunWorkerAsync(args);
 
             BackgroundWorker odgamad = new BackgroundWorker();
             odgamad.DoWork += Odgamad_DoWork;
             odgamad.RunWorkerCompleted += Odgamad_RunWorkerCompleted;
+            //odgamad.RunWorkerCompleted += (s, re) => { MessageBox.Show(String.Format("result is: {0}", re.Result.ToString())); };
             odgamad.RunWorkerAsync(args);
         }
 
