@@ -80,29 +80,13 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
-        public void TestMotherDayXml()
+        public void TestAddMotherToXML()
         {
-            XElement root = DS.DatasourceXML.Mothers;
-            var firstmother = root.Elements("Mother").First();
-            var res = (from d in firstmother.Element("DaysArray").Elements("Day")
-                       from t in d.Elements("Time")
-                       select new Day
-                       {
-                           Start = new TimeSpan(
-                               Int32.Parse(t.Element("Hour").Value),
-                               Int32.Parse(t.Element("Minutes").Value),
-                               Int32.Parse(t.Element("Seconds").Value)),
-                           End = new TimeSpan(
-                               Int32.Parse(t.Element("Hour").Value),
-                               Int32.Parse(t.Element("Minutes").Value),
-                               Int32.Parse(t.Element("Seconds").Value)),
-                       }).ToList();
-            foreach (var d in res)
-            {
-                Console.WriteLine(d);
-            }
+            FactorySingletonBL.getInstance.addMother(imma);
+            Mother mother = FactorySingletonBL.getInstance.getAllMothers().FirstOrDefault();
+            Console.WriteLine(mother);
         }
-
+ 
         [TestMethod]
         public void TestGoogleMapApi()
         {

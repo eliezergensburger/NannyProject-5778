@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfUI
+namespace UI_WPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -27,8 +27,7 @@ namespace WpfUI
 
         private void btnGoogleMap_Click(object sender, RoutedEventArgs e)
         {
-            Window wnd = new CalcDistanceWindow();
-            wnd.Show();
+            new CallGoogleMapWindow().Show();
         }
     }
 }

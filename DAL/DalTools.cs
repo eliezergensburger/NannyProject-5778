@@ -143,17 +143,22 @@ namespace DAL
                     WantedDays = (from e in motherXml.Element("WantedDaysArray").Elements("DayBool")
                                   select Boolean.Parse(e.Value)).ToArray(),
                     Days = (from d in motherXml.Element("DaysArray").Elements("Day")
-                            from t in d.Elements("Time")
+                            let start = (from t in  d.Elements("Time")
+                                        where t.Attribute("type").Value == "Start"
+                                        select t).FirstOrDefault()
+                            let end = (from t in d.Elements("Time")
+                                         where t.Attribute("type").Value == "End"
+                                         select t).FirstOrDefault()
                             select new Day
                             {
                                 Start = new TimeSpan(
-                                    Int32.Parse(t.Element("Hours").Value),
-                                    Int32.Parse(t.Element("Minutes").Value),
-                                    Int32.Parse(t.Element("Seconds").Value)),
+                                    Int32.Parse(start.Element("Hours").Value),
+                                    Int32.Parse(start.Element("Minutes").Value),
+                                    Int32.Parse(start.Element("Seconds").Value)),
                                 End = new TimeSpan(
-                                    Int32.Parse(t.Element("Hours").Value),
-                                    Int32.Parse(t.Element("Minutes").Value),
-                                    Int32.Parse(t.Element("Seconds").Value)) 
+                                    Int32.Parse(end.Element("Hours").Value),
+                                    Int32.Parse(end.Element("Minutes").Value),
+                                    Int32.Parse(end.Element("Seconds").Value)) 
 
                             }).ToList()
                 };

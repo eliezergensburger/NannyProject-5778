@@ -99,3 +99,5 @@ C:\AKADEMIC\5778\Dot Net\NannyProject-5778\WpfUI\obj\Debug\WpfUI.csproj.Generate
 C:\AKADEMIC\5778\Dot Net\NannyProject-5778\WpfUI\obj\Debug\WpfUI.csproj.CoreCompileInputs.cache
 C:\AKADEMIC\5778\Dot Net\NannyProject-5778\WpfUI\obj\Debug\WpfUI.exe
 C:\AKADEMIC\5778\Dot Net\NannyProject-5778\WpfUI\obj\Debug\WpfUI.pdb
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\WpfUI\obj\Debug\CalcDistanceWindow.g.cs
+C:\AKADEMIC\5778\Dot Net\NannyProject-5778\WpfUI\obj\Debug\CalcDistanceWindow.baml

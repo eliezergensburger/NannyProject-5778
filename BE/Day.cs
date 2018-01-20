@@ -8,6 +8,7 @@ namespace BE
 {
     public class Day
     {
+        //thanks to nachum & matanya
         public TimeSpan Start { get; set; }
         public TimeSpan End { get; set; }
         public override string ToString()
