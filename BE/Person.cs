@@ -12,7 +12,7 @@ namespace BE
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
-
+        public Gender Gender { get; set; }
         public override string ToString()
         {
             string result=null;
@@ -20,6 +20,7 @@ namespace BE
             result += "\n" + "ID" +": "+ ID;
             result += "\n" + "FirstName" + ": " + FirstName;
             result += "\n" + "LastName" + ": " + LastName;
+            result += "\n" + "Gender" + ": " + Gender;
 
             return result;
         }

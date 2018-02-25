@@ -63,3 +63,20 @@ C:\AKADEMIC\5778\Dot Net\NannyProject-5778\ConsoleUI\obj\Debug\ConsoleUI.csprojR
 C:\AKADEMIC\5778\Dot Net\NannyProject-5778\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
 C:\AKADEMIC\5778\Dot Net\NannyProject-5778\ConsoleUI\obj\Debug\ConsoleUI.exe
 C:\AKADEMIC\5778\Dot Net\NannyProject-5778\ConsoleUI\obj\Debug\ConsoleUI.pdb
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\bin\Debug\BE.dll
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\bin\Debug\BL.dll
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\bin\Debug\DAL.dll
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\bin\Debug\GoogleMapsApi.dll
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\bin\Debug\DS.dll
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\bin\Debug\BE.pdb
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\bin\Debug\BL.pdb
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\bin\Debug\DAL.pdb
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\bin\Debug\DS.pdb
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\obj\Debug\ConsoleUI.csprojResolveAssemblyReference.cache
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\Eliezer\Source\Repos\NannyProject-5778\ConsoleUI\obj\Debug\ConsoleUI.pdb
